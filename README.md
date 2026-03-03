@@ -31,14 +31,14 @@ A production-grade Dockerized microservices system with CI/CD automation, revers
 
     ┌───────────────┐ ┌───────────────┐
     │ User Service │  │ Order Service │
-      │ FastAPI │ │ FastAPI │
+      │ FastAPI │        │ FastAPI │
     └───────┬───────┘ └───────┬───────┘
-    │ │
+    │                               │
     └───────────────┬───────────────┘
-    │
-    ┌───────────────┐
-    │ PostgreSQL │
-    └───────────────┘
+                    │
+             ┌───────────────┐
+              | PostgreSQL │
+             └───────────────┘
 
 
 ---
